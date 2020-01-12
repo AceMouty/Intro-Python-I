@@ -9,21 +9,29 @@ y = [8, 9, 10]
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE
 print(x)
+x.append(4)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
+x.extend(y)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
+x.remove(8)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
+x.insert(-1, 99)
 print(x)
 
 # Print the length of list x
 # YOUR CODE HERE
-
+print("The length of the list is: {}".format(len(x)))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
+print([num * 1000 for num in x]) #list comprehension
+
+for num in x:
+  print(num * 1000)
