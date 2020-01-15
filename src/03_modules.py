@@ -5,6 +5,7 @@ methods, and the os module, which gives you access to lower-
 level operating system functionality.
 """
 
+import os
 import sys
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
@@ -14,7 +15,7 @@ print("Number of arguements {}".format(len(sys.argv)))
 print("Argument list {}".format(str(sys.argv)))
 print("Argv is {} data type".format(type(sys.argv)))
 for arg in sys.argv:
-  print("Arg value: {}".format(arg))
+    print("Arg value: {}".format(arg))
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
@@ -25,8 +26,6 @@ print("Operating system: {}".format(sys.platform))
 print("Version of python being used: {}".format(sys.version))
 
 
-
-import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID

@@ -10,9 +10,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 with open('foo.txt') as f:
-  # the read method will return data, this can be captured in a variable or sent to print
-  file_data = f.read()
-  print(file_data)
+    # the read method will return data,
+    # this can be captured in a variable or sent to print
+    file_data = f.read()
+    print(file_data)
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -21,9 +22,9 @@ with open('foo.txt') as f:
 
 # YOUR CODE HERE
 with open("bar.txt", "w") as f:
-  f.write("Hello.....\n")
-  f.write("What are you doing?\n")
-  f.write("Hello...are you even listening to me?\n")
+    f.write("Hello.....\n")
+    f.write("What are you doing?\n")
+    f.write("Hello...are you even listening to me?\n")
 
 with open("bar.txt") as f:
-  print(f.read())
+    print(f.read())
